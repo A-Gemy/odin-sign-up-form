@@ -10,6 +10,15 @@
 */
 
 /* General/Global rules */
+/* heading font */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+/* secondary font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --heading_font: "Oswald", sans-serif;
+  --sec_font: "Roboto", sans-serif;
+}
 
 * {
   margin: 0;
@@ -20,4 +29,80 @@
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+}
+
+.hero {
+  width: 35%;
+  height: 100%;
+  background-image: url("../images/tree-big.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 2.4rem;
+  margin-top: 20vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo_img {
+  width: 9.6rem;
+}
+
+.hero h2 {
+  font-size: 5.2rem;
+  font-family: var(--heading_font);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+}
+
+.hero_footer {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 32px 0;
+}
+
+.hero_footer img {
+  width: 2rem;
+  margin: 0 0.6rem;
+}
+
+.hero_footer a:link,
+.hero_footer a:visited {
+  color: #5c8374;
+  transition: 0.3s;
+}
+
+.hero_footer a:hover,
+.hero_footer a:active {
+  color: #467c67;
+}
+
+.form {
+  font-family: var(--sec_font);
+  /* temp font size */
+  font-size: 18px;
 }
