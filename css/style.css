@@ -13,7 +13,7 @@
 /* heading font */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 /* secondary font */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap");
 
 :root {
   --heading_font: "Oswald", sans-serif;
@@ -35,6 +35,10 @@ html {
 img {
   max-width: 100%;
 }
+
+/*****************/
+/* Start hero */
+/*****************/
 
 .container {
   width: 100%;
@@ -60,8 +64,8 @@ img {
   align-items: center;
   gap: 1.6rem;
   padding: 2.4rem;
-  margin-top: 20vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 15vh;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo_img {
@@ -101,8 +105,168 @@ img {
   color: #467c67;
 }
 
+/*****************/
+/* End hero */
+/*****************/
+
+/*****************************/
+/********* Start form ********/
+/*****************************/
+
 .form {
   font-family: var(--sec_font);
-  /* temp font size */
-  font-size: 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
 }
+
+.form section {
+  flex: 1 1 0;
+}
+
+/*****************/
+/* Start header */
+/*****************/
+
+.header_section,
+.footer_section {
+  background-color: #eeeff1;
+  color: #444;
+}
+
+.header_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 4.4rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+.header_section p {
+  max-width: 70ch;
+}
+
+.header_section p:last-child {
+  margin-top: 2rem;
+}
+
+/*****************/
+/* End header */
+/*****************/
+
+/*****************/
+/* Start form */
+/*****************/
+
+.form .form_section {
+  font-size: 1.4rem;
+  padding: 2.4rem 4.4rem;
+  flex: 1;
+}
+
+.form_section h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.form_section .form_inputs {
+  max-width: 65rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  color: #666;
+}
+
+.form_inputs div,
+.form_inputs p {
+  flex: 1 1 300px;
+}
+
+.form_inputs div label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.form_inputs label span {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.form_inputs div input {
+  font-size: 1.6rem;
+  padding: 1.2rem 1.6rem;
+  width: 80%;
+  border: 1px solid #e5e7eb;
+  box-shadow: 1px 1px 8px rgba(218, 213, 213, 0.2);
+  border-radius: 0.8rem;
+}
+
+.form_inputs input:focus {
+  outline: none;
+}
+
+.form_inputs input:user-valid {
+  border: 1px solid green;
+}
+
+.form_inputs input:user-invalid {
+  border: 1px solid red;
+}
+
+.form_inputs p {
+  font-size: 1.6rem;
+  color: #444;
+}
+
+.show {
+  margin-right: 0.5rem;
+}
+
+/*****************/
+/* End form */
+/*****************/
+
+/*****************/
+/* Start footer */
+/*****************/
+
+.footer_section {
+  font-size: 1.6rem;
+  padding: 3rem 4.4rem 0;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  background: #596d48;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #41552e;
+}
+
+.footer_section p a {
+  color: #596d48;
+  font-weight: bold;
+}
+
+/*****************/
+/* End footer */
+/*****************/
+
+/*****************************/
+/********* End form ********/
+/*****************************/
